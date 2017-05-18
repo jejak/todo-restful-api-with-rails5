@@ -48,4 +48,11 @@ group :development, :test do
 end
 
 gem 'bcrypt', '~> 3.1.7'
+# Temporary fix for bcrypt of issue : bcrypt.rb:16:in `require': cannot load such file -- bcrypt_ext (LoadError):
+# https://github.com/codahale/bcrypt-ruby/issues/149
+# gem uninstall bcrypt
+# gem install bcrypt --platform=ruby
+
 gem 'jwt'
+gem 'active_model_serializers', '~> 0.10.0'
+gem 'will_paginate', '~> 3.1.0'
