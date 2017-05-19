@@ -1,0 +1,9 @@
+language: ruby
+rvm:
+  - "2.3.3"
+before_install: gem install rails
+script:
+  - RAILS_ENV=test bundle exec rake db:migrate --trace
+  - bundle exec rake db:test:prepare
+  - bundle exec rspec spec/
+bundler_args: --binstubs=./bundler_stubs
