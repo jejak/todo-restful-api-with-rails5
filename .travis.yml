@@ -1,7 +1,7 @@
 language: ruby
 rvm:
   - "2.3.3"
-before_install: gem install rails (5.1.1)
+before_install: gem install rails
 script:
   - RAILS_ENV=test bundle exec rake db:migrate --trace
   - bundle exec rake db:test:prepare
