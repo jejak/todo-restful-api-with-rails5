@@ -13,7 +13,7 @@ Here are the link to these tutorial parts:
 - RESTful API implemented with Rails5
 - Implementation authorizes requests and authenticate users
   - The request authorization is token-based with JWT (JSON Web Tokens)
-  - The user authentication mechanism uses paswword digest
+  - The user authentication mechanism uses password digest
 - All API parts have been developed with Test Driven Development methodology which results that all part is covered Rspec tests
 
 ## Unit Test
